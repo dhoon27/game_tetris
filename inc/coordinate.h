@@ -1,20 +1,20 @@
 #ifndef CCORDINATE__H
 #define CCORDINATE__H
 
-#define INIT_ROW         (3)
-#define INIT_COL         (30)
-#define INIT_ROW_SIZE    (50)
+#define INIT_ROW         (0)
+#define INIT_COL         (20)
+#define INIT_ROW_SIZE    (40)
 #define INIT_COL_SIZE    (20)
 
 #define GAME_ROW         (0)
-#define GAME_COL         (0)
-#define GAME_ROW_SIZE    (120)
-#define GAME_COL_SIZE    (40)
+#define GAME_COL         (20)
+#define GAME_ROW_SIZE    (20)
+#define GAME_COL_SIZE    (20)
 
-#define NEXT_ROW         (0)
-#define NEXT_COL         (0)
-#define NEXT_ROW_SIZE    (120)
-#define NEXT_COL_SIZE    (40)
+#define NEXT_ROW         (5)
+#define NEXT_COL         (50)
+#define NEXT_ROW_SIZE    (16)
+#define NEXT_COL_SIZE    (8)
 
 #define MAX_BUF_SIZE    (512)
 char buf[MAX_BUF_SIZE];
@@ -29,8 +29,8 @@ void print_col_char(int row, int col, int n, char* c);
 void print_row_str(int row, int col, int n, char* c);
 void print_col_str(int row, int col, int n, char* c);
 // 벽: ▩
-// 굳은 블럭: □
-// 움직 블럭: ■
+// 움직 블럭: □
+// 굳은 블럭: ■
 // star : ★
 
 #endif // CCORDINATE__H

@@ -6,8 +6,6 @@ void gotoxy(int y, int x)
 {
     // \033 escape문자의 문법. 해당 y, x으로 cursor이동
     printf("\033[%d;%df",y, x); 
-    // printf("hello");
-    fflush(stdout); 
 }
 
 void print_row_char(int row, int col, int n, char* c)
@@ -15,8 +13,8 @@ void print_row_char(int row, int col, int n, char* c)
     while(n--) {
         gotoxy(row, col++);
         printf("%s",c);
+        fflush(stdout);
     }
-    fflush(stdout);
 }
 
 void print_col_char(int row, int col, int n, char* c)
@@ -24,8 +22,8 @@ void print_col_char(int row, int col, int n, char* c)
     while(n--) {
         gotoxy(row++, col);
         printf("%s",c);
+        fflush(stdout);
     }
-    fflush(stdout);
 }
 
 void print_row_str(int row, int col, int n, char* c)
@@ -34,9 +32,9 @@ void print_row_str(int row, int col, int n, char* c)
     while(n--) {
         gotoxy(row, col++);
         printf("%c",*(c+i));
+        fflush(stdout);
         i++;
     }
-    fflush(stdout);
 }
 
 void print_col_str(int row, int col, int n, char* c)
@@ -45,7 +43,7 @@ void print_col_str(int row, int col, int n, char* c)
     while(n--) {
         gotoxy(row++, col);
         printf("%c",*(c+i));
+        fflush(stdout);
         i++;
     }
-    fflush(stdout);
 }

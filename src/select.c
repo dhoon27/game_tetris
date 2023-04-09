@@ -22,7 +22,7 @@ void select_game()
             input = getch();
             if (input == 91) {
                 print_row_char((INIT_ROW + INIT_COL_SIZE/2), (INIT_COL + INIT_ROW_SIZE/2)-3, 1, " ");
-                print_row_char((INIT_ROW + INIT_COL_SIZE/2)+INIT_ROW, (INIT_COL + INIT_ROW_SIZE/2)-3, 1, " ");
+                print_row_char((INIT_ROW + INIT_COL_SIZE/2)+1, (INIT_COL + INIT_ROW_SIZE/2)-3, 1, " ");
                 input = getch();
                 switch (input)
                 {
@@ -37,7 +37,7 @@ void select_game()
                         /* code */
                         break;
                     case 66: // DOWN
-                        print_row_char((INIT_ROW + INIT_COL_SIZE/2)+INIT_ROW, (INIT_COL + INIT_ROW_SIZE/2)-3, 1, "★");
+                        print_row_char((INIT_ROW + INIT_COL_SIZE/2)+1, (INIT_COL + INIT_ROW_SIZE/2)-3, 1, "★");
                         select = 0;
                         break;
                     default:
